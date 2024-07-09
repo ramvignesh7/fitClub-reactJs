@@ -1,0 +1,269 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftH {
+    flex: 3;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightH {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.bestFitness {
+    margin-top: 90px;
+    background-color: #393d42;
+    width: fit-content;
+    color: #fff;
+    padding: 20px 13px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.bestFitness>span {
+    z-index: 1;
+}
+
+.bestFitness>div {
+    position: absolute;
+    background-color: var(--orange);
+    border-radius: 50px;
+    width: 80px;
+    height: 80%;
+    left: 10px;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.heroText>:nth-of-type(3) {
+    font-size: 16px;
+    width: 80%;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.figure {
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.figure>div {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.figure>div>span:nth-of-type(1) {
+    color: #fff;
+    font-size: 32px;
+}
+
+.figure>div>span:nth-of-type(2) {
+    color: var(--gray);
+}
+
+.heroButtons {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+.heroButtons>:nth-child(1) {
+    background-color: var(--orange);
+    color: #fff;
+    width: 130px;
+}
+
+.heroButtons>:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: #fff;
+    width: 130px;
+}
+
+.rightH>button {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.heartRate {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 21px;
+    border-radius: 5px;
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+}
+
+.heartRate img {
+    width: 2rem;
+
+}
+
+.heartRate>:nth-child(2) {
+    color: var(--gray);
+}
+
+.heartRate>:nth-child(3) {
+    font-size: 22px;
+    color: #fff;
+}
+
+.heroImage {
+    position: absolute;
+    width: 23rem;
+    top: 11rem;
+    right: 8rem;
+    z-index: 1;
+}
+
+.heroImageBack {
+    position: absolute;
+    top: 4rem;
+    right: 21rem;
+    width: 15rem;
+    z-index: -1;
+}
+
+.calories {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    background-color: var(--caloryCard);
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 34rem;
+    right: 28rem;
+}
+
+.calories img {
+    width: 48px;
+}
+
+.calories div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories div>span:nth-child(1) {
+    color: var(--gray);
+}
+
+.calories div>span:nth-child(2) {
+    color: #fff;
+    font-size: 25px;
+}
+
+.heroBlur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+/* media query */
+@media (max-width:846px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .rightH {
+        background: none;
+    }
+
+    .bestFitness {
+        align-self: center;
+        font-size: small;
+    }
+
+    .heroText {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .heroText>:nth-of-type(3) {
+        text-align: center;
+        margin: auto;
+    }
+
+    .figure {
+        align-self: center;
+    }
+
+    .heroButtons {
+        justify-content: center;
+    }
+
+    .heroImage {
+        position: relative;
+        width: 15rem;
+        left: 10rem;
+        top: 5rem;
+    }
+
+    .heroImageBack {
+        width: 14rem;
+        top: 0px;
+        left: 4rem;
+    }
+
+    .heartRate {
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .calories {
+        position: relative;
+        top: 6rem;
+        left: 3rem;
+        gap: 33px;
+        padding: 11px 27px;
+    }
+
+    .calories img {
+        width: 37px;
+    }
+
+    .calories div>span:nth-child(2) {
+        color: #fff;
+        font-size: 21px;
+    }
+
+    .programHeader {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:515px) {
+    .heroImage {
+        width: 14rem;
+        left: 8rem;
+    }
+}

@@ -1,0 +1,104 @@
+.plan{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: #fff;
+    background-color: var(--caloryCard);
+    padding: 40px;
+    z-index: 0;
+}
+.plansContainer{
+    padding: 0 3%;
+    position: relative;
+}
+.plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin: 80px 0 0 0;
+}
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plan svg{
+    width: 35px;
+    height: 35px;
+    fill: var(--orange);
+}
+.plan>span:nth-of-type(1){
+    font-weight: bold;
+}
+.plan>span:nth-of-type(2){
+    font-size: 50px;
+    font-weight: bold;
+}
+.feature{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.feature>span{
+    font-size: 14px;
+}
+.feature img{
+    width: 18px;
+}
+.benefits>span{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+.benefits>span>img{
+    width: 9px;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.plans>:nth-of-type(2)>svg{
+    fill: #fff;
+}
+.plans>:nth-of-type(2)>button{
+   color: var(--orange);
+}
+.blurL{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0;
+    position: absolute;
+}
+.blurR{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    right: 0;
+    position: absolute;
+}
+/* media query */
+@media (max-width:880px){
+    .plans{
+        flex-direction: column;
+    }
+    .plan:nth-child(2) {
+       transform: none;
+       -webkit-transform: none;
+    }
+    .programHeaderFoot{
+        margin-top: -50px;
+    }
+}
+@media (max-width:515px){
+    .blurL {
+        width: 22rem;
+        height: 12rem;
+    }
+    .blurR {
+        width: 22rem;
+        height: 13rem;
+    }
+}

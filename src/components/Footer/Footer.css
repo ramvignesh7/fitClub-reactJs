@@ -1,0 +1,47 @@
+.socialLinks>img{
+    width: 30px;
+}
+.socialLinks{
+    display: flex;
+    gap: 4rem;
+}
+.logoF>img{
+    width: 160px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 3%;
+}
+.footerContainer{
+    position: relative;
+}
+.blurFl{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+    /* right: 15rem; */
+    right: 15%;
+    filter: blur(200px);
+    background: red;
+}
+.blurFR{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+    left: 15%;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+}
+/* media query */
+@media (max-width:515px){
+    .blurFl {
+        width: 16rem;
+    }
+    .blurFR {
+        width: 16rem;
+    }
+}
